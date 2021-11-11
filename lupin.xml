@@ -1,0 +1,52 @@
+<element name="Lupin" type="Race" source="Player’s Handbook" id="ID_RACE_Lupin">
+		<description>
+			<p class="flavor">The lupin are a tribal people whose origins have been lost to the ages. The canid humanoids wander realms of thick forests and grasslands, rarely making contact with other civilized races for fear of being ostracized. A traditionally nomadic people, it is rare to see a lupin stay in one place for long, and rarer to see one without their bonded mount.</p>
+			<h4>Skilled Predators</h4>
+			<p>Lupin society developed over the tribal necessity to follow herds of deer, antelope, and elk. Lupin children are taught to hunt and ride on horses and direwolf mounts, and, at puberty, participate in a tribal rite of passage in which they must spend a night on the grasslands with only the company of their mount. Often mistaken for werewolves, given their bipedal wolflike appearance. It’s for this reason that much of lupin society is made of highly skilled lycanthrope hunters, many of whom begin training as early as their first solid meal. Due to this they have little sympathy towards lycanthropes and will hunt and kill one without hesitation.</p>
+			<h4>Social Creatures</h4>
+			<p>Lupins consider trust and loyalty to be paramount, and they are taught to work for the well-being of their community. Lupins hate solitude, preferring crowds and social atmospheres. They give their friendship freely, and because of this many lupins hold grudges when they feel they've been taken advantage of.</p>
+			<h4>Lupin Adventurers</h4>
+            <p>Lupins consider trust and loyalty to be paramount, and they are taught to work for the well-being of their community. Lupins hate solitude, preferring crowds and social atmospheres. They give their friendship freely, and because of this many lupins hold grudges when they feel they've been taken advantage of.</p>
+			<h4>Lupin NAMES</h4>
+			<p>Lupins traditionally present their young with two given names combined with a hyphen when written: one name from the father (usually one of his parents' names) and one name from the mother (usually one of her parents' names).</p>
+			<ul class="unstyled">
+				<li><strong>Male Lupin Names:</strong> Crott, Hector, Lab, Mattaff, Renard, Roff, Turff, Fen, Alsat, Dobe.</li>
+				<li><strong>Female Lupin Names:</strong> Arann, Carra, Fikenn, Likka, Jakka, Rottie, Warra, Tzu, Erain.</li>
+			</ul>
+			<h4>Lupin TRAITS</h4>
+			<p class="indent"><strong><em>Ability Score Increase.</em></strong> Your Dexterity score increases by 2, and your Strength score increases by 1.</p>
+			<p class="indent"><strong><em>Age.</em></strong> The Lupin live for many years; the longest known elder has lived for over 300 human years. Lupins are considered pups until they reach 40 human years, are adults through till 190 human years, following this they are considered Elders.</p>
+			<p class="indent"><strong><em>Alignment.</em></strong> Their strong beliefs in community, loyalty, and trust mark lupins as highly lawful creatures. Generosity and pity for the poor define the race, but lupins also tend to hold grudges and refuse aid to those who have wronged them in the past. Thus, many lupins are either lawful good or lawful neutral. Only rare exceptions become chaotic or evil.</p>
+			<p class="indent"><strong><em>Size.</em></strong> Lupins are a slightly larger size and build than humans. Your size is Medium.</p>
+			<p class="indent"><strong><em>Speed.</em></strong> Your base walking speed is 30 feet.</p>
+			<p class="indent"><strong><em>Darkvision.</em></strong> You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can’t discern colour in darkness, only shades of grey.</p>
+			<p class="indent"><strong><em>Keen Hearing and Smell</em></strong>You gain advantage on Wisdom (Perception) checks that rely on hearing or smell.</p>
+            <p class="indent"><strong><em>Dumb Dog</em></strong>When a Lupin has an Intelligence of 10 or less, they become a slight hindrance to those around them in as much as they are unable to prevent themselves from performing actions, if a thought pops into their head, they will act on it instead of rationalise it. New creature? Sniff it unless a successful saving roll is made. Strange goop on wall or floor? Going to lick it unless a successful saving roll is made. Teammates can perform a saving roll to stop the Lupin if they fail their own rolls.</p>
+            <p class="indent"><strong><em>Expert Rider</em></strong>Your tribal upbringing gives you an edge handling horses and other mounts. Whenever you make an ability check made to persuade or control a mount, roll a d4, and add the number rolled to the check's total.</p>
+			<p class="indent"><strong><em>Lycanthrope Tracker</em></strong> Your intense training has given you unmatched insight when identifying lycanthropes. When you make a Wisdom (Survival) check to track shapechangers, roll a d4, and add the number rolled to the check’s total. While you are actively tracking a shapechanger, you cannot be surprised by them. In addition, when a shapechanger makes a Charisma (Deception) check to conceal its nature from you, or they make a Dexterity (Stealth) check to hide from you, they do so at disadvantage.</p>
+			<p class="indent"><strong><em>Languages.</em></strong> You can speak, read, and write Common and Lupin.</p>
+		</description>
+		<sheet display="false" />
+		<setters>
+			<set name="names" type="male">Crott, Hector, Lab, Mattaff, Renard, Roff, Turff, Fen, Alsat, Dobe.</set>
+			<set name="names" type="female">Arann, Carra, Fikenn, Likka, Jakka, Rottie, Warra, Tzu, Erain.</set>
+			<set name="names-format">{{name}}</set>
+			<set name="height" modifier="2d8">5'12"</set>
+			<set name="weight" modifier="2d4">140 lb.</set>
+		</setters>
+		<rules>
+			<stat name="strength" value="1" requirements="!ID_INTERNAL_GRANTS_LUPIN_SUBRACE" />
+			<stat name="dexterity" value="2" requirements="!ID_INTERNAL_GRANTS_LUPIN_SUBRACE"/>
+			<stat name="innate speed" value="30" bonus="base"/>
+			<grant type="Size" id="ID_SIZE_MEDIUM" />
+			<grant type="Vision" id="ID_VISION_DARKVISION" />
+			<grant type="Language" id="ID_LANGUAGE_COMMON" />
+			<grant type="Language" id="ID_LANGUAGE_INFERNAL" />
+			<grant type="Racial Trait" id="ID_RACIAL_TRAIT_KEEN_HEARING_AND_SMELL" />
+            <grant type="Racial Trait" id="ID_RACIAL_TRAIT_EXPERT_RIDER" />
+            <grant type="Racial Trait" id="ID_RACIAL_TRAIT_LYCANTHROPE_TRACKER" />
+			<grant type="Racial Trait" id="ID_RACIAL_TRAIT_DUMB_DOG" requirements="!ID_INTERNAL_GRANTS_LUPIN_SUBRACE"/>
+			<select type="Sub Race" name="Lupin Subrace" supports="Lupin" optional="true" />
+		</rules>
+	</element>
+</elements>

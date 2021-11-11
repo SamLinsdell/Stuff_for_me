@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<update version="0.1">
+			<file name="source.xml" url="https://github.com/SamLinsdell/Stuff_for_me/blob/main/lupin.index" />
+		</update>
+	</info>
+	<element name="Custom" type="Source" source="Core" id="SAM_OWN_STUFF">
+		<description>
+			<![CDATA[<p>My own Stuff.</p>]]>
+		</description>
+		<setters>
+			<set name="abbreviation">SoS</set>
+			<set name="url">https://github.com/SamLinsdell/Stuff_for_me/blob/main/lupin.index</set>
+			<set name="author" abbreviation="SoS">Sams Own Stuff</set>
+			<set name="homebrew">true</set>
+		</setters>
+	</element>
+</elements>

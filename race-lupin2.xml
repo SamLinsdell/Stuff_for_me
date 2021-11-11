@@ -1,4 +1,13 @@
-<element name="Lupin" type="Race" source="Player’s Handbook" id="ID_RACE_Lupin">
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Lupin</name>
+		<update version="0.2.2">
+			<file name="race-lupin2.xml"  url="https://github.com/SamLinsdell/Stuff_for_me/blob/main/lupin.xml" />
+		</update>
+	</info>
+
+	<element name="Lupin" type="Race" source="Player’s Handbook" id="ID_RACE_Lupin">
 		<description>
 			<p class="flavor">The lupin are a tribal people whose origins have been lost to the ages. The canid humanoids wander realms of thick forests and grasslands, rarely making contact with other civilized races for fear of being ostracized. A traditionally nomadic people, it is rare to see a lupin stay in one place for long, and rarer to see one without their bonded mount.</p>
 			<h4>Skilled Predators</h4>
